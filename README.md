@@ -13,3 +13,15 @@ Easy install with [Composer](http://getcomposer.org/).
 ```php
 php composer.phar require "crit/cloudflare": "dev-master"
 ```
+
+## Usage
+
+```php
+<?php
+include "vendor/autoload.php";
+
+use CloudFlare\CloudFlare;
+
+$visitor_ip = CloudFlare::VisitorIP();
+$visitor_country = CloudFlare::VisitorCountry();
+```
