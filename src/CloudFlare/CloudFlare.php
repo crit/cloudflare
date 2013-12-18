@@ -13,8 +13,8 @@ class CloudFlare
      */
     public static function VisitorIP()
 	{
-		// [HTTP_CF_CONNECTING_IP] => xxx.xxx.xxx.xxx
-		return $_SERVER['HTTP_CF_CONNECTING_IP'] ?: "";
+        // [HTTP_CF_CONNECTING_IP] => xxx.xxx.xxx.xxx
+        return $_SERVER['HTTP_CF_CONNECTING_IP'] ?: "";
 	}
 
     /**
