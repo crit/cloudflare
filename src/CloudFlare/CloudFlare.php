@@ -22,8 +22,8 @@ class CloudFlare
      */
     public static function VisitorCountry()
 	{
-		// [HTTP_CF_IPCOUNTRY] => US
-		return $_SERVER['HTTP_CF_IPCOUNTRY'] ?: "";
+        // [HTTP_CF_IPCOUNTRY] => US
+        return $_SERVER['HTTP_CF_IPCOUNTRY'] ?: "";
 	}
 
     /**
